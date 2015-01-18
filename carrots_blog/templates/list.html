@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<ul>
+			{# wyswietla liste postow #}
+			{% for post in posty %} {# wykonanie akcji #}
+				<li><a href= "{% url "pokaz" post.id %}"> {{ post.title }} </a></li>  {# dwie klamre- wyciagnieie danych #}
+			{% endfor %}
+
+		</ul>
+	</body>
+</html> 
